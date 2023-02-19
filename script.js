@@ -19,36 +19,76 @@ function cal()
     var sd=a-20;
     var se=a-27;
 
-    if(m2 <50 || m<se)
+    if(n2!=0)
     {
-        var result=document.getElementById('result').value="F or N GRADE";
+        if(m2 <50 || m<se)
+        {
+            var result=document.getElementById('result').value="F or N GRADE";
+        }
+        else if(m>=se && m<sd)
+        {
+            var result=document.getElementById('result').value="E GRADE";
+        }
+        else if(m>=sd && m<sc)
+        {
+            var result=document.getElementById('result').value="D GRADE";
+        }
+        else if(m>=sc && m<sb)
+        {
+            var result=document.getElementById('result').value="C GRADE";
+        }
+        else if(m>=sb && m<sa)
+        {
+            var result=document.getElementById('result').value="B GRADE";
+        }
+        else if(m>sa && m<ss)
+        {
+            var result=document.getElementById('result').value="A GRADE";
+        }
+        else if(m>=ss && m>=80)
+        {
+            var result=document.getElementById('result').value="S GRADE";
+        }
+        else
+        {
+            var result=document.getElementById('result').value="A GRADE";
+        }
     }
-    else if(m>=se && m<sd)
+    else
     {
-        var result=document.getElementById('result').value="E GRADE";
+        if(m<se)
+        {
+            var result=document.getElementById('result').value="F or N GRADE";
+        }
+        else if(m>=se && m<sd)
+        {
+            var result=document.getElementById('result').value="E GRADE";
+        }
+        else if(m>=sd && m<sc)
+        {
+            var result=document.getElementById('result').value="D GRADE";
+        }
+        else if(m>=sc && m<sb)
+        {
+            var result=document.getElementById('result').value="C GRADE";
+        }
+        else if(m>=sb && m<sa)
+        {
+            var result=document.getElementById('result').value="B GRADE";
+        }
+        else if(m>sa && m<ss)
+        {
+            var result=document.getElementById('result').value="A GRADE";
+        }
+        else if(m>=ss && m>=80)
+        {
+            var result=document.getElementById('result').value="S GRADE";
+        }
+        else
+        {
+            var result=document.getElementById('result').value="A GRADE";
+        }
     }
-    else if(m>=sd && m<sc)
-    {
-        var result=document.getElementById('result').value="D GRADE";
-    }
-    else if(m>=sc && m<sb)
-    {
-        var result=document.getElementById('result').value="C GRADE";
-    }
-    else if(m>=sb && m<sa)
-    {
-        var result=document.getElementById('result').value="B GRADE";
-    }
-    else if(m>sa && m<ss)
-    {
-        var result=document.getElementById('result').value="A GRADE";
-    }
-    else if(m>=ss && m>=80)
-    {
-        var result=document.getElementById('result').value="S GRADE";
-    }
-    else{
-        var result=document.getElementById('result').value="A GRADE";
-    }
+    
     
 }
