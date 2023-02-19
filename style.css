@@ -25,10 +25,10 @@ button{
     color: white;
 }
 button:hover{
-    background-color: blue;
+    background-color: lightblue;
 }
 input:hover{
-    background-color: blue;
+    background-color: lightblue;
 }
 .header{
     font-size: 35px;
