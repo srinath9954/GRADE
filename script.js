@@ -49,7 +49,7 @@ function cal()
         {
             var result=document.getElementById('result').value="S GRADE";
         }
-        else
+        else if(m>=ss && m<80)
         {
             var result=document.getElementById('result').value="A GRADE";
         }
@@ -84,7 +84,7 @@ function cal()
         {
             var result=document.getElementById('result').value="S GRADE";
         }
-        else
+        else if(m>=ss && m<80)
         {
             var result=document.getElementById('result').value="A GRADE";
         }
